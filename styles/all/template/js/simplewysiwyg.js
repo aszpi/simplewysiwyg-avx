@@ -1,9 +1,10 @@
 window.senky_simplewysiwyg_editor = CKEDITOR.replace('message', {
-	// customConfig: false,
-	// stylesSet: false,
+	customConfig: false,
+	stylesSet: false,
 	toolbar: [
 		{ items: ['Undo', 'Redo'] },
 		{ items: ['Bold', 'Italic', 'Underline', senky_simplewysiwyg_quote ? 'Blockquote' : true, 'CodeSnippet', 'NumberedList', 'BulletedList', senky_simplewysiwyg_img ? 'Image' : true, senky_simplewysiwyg_url ? 'Link' : true, senky_simplewysiwyg_url ? 'Unlink' : true, 'TextColor', 'FontSize'] },
+		{ items: [ 'Find', 'Replace', '-', 'SelectAll', 'RemoveFormat' ] },
 		{ items: ['Source'] },
 	],
 	contentsCss: [
@@ -29,10 +30,21 @@ window.senky_simplewysiwyg_editor = CKEDITOR.replace('message', {
 	smiley_path: senky_simplewysiwyg_smiley_path,
 });
 
-// hide BBcode buttons once CKEditor is initialised
+// hide original BBcode buttons once CKEditor is initialised
 window.senky_simplewysiwyg_editor.once('instanceReady', function() {
 	var buttons = document.getElementById('format-buttons');
-	buttons.parentElement.removeChild(buttons);
+	// --- ADDED by Attila Szabó (aszpirin72@gmail.con) 02/13/2023
+	// instead of deleting all the buttons, we leave the buttons of visible user-defined BBcodes in place
+	// these are all placed after the select box in the editor's DOM, so we delete everything before and including the select box 
+	var lastButtonTag = '';
+	while (buttons.firstChild && (lastButtonTag !== 'SELECT')) { 
+		lastButtonTag = buttons.firstChild.nodeName;
+		buttons.removeChild(buttons.firstChild); 
+	}
+    // -- END of a added code by Attila Szabó 
+    // -- DELETED by Attila Szabó on 02/13/2023
+	// no need for removing the parent element of the BBCode buttons
+	//	buttons.parentElement.removeChild(buttons);
 });
 
 // replaces function defined in assets/javascript/editor.js

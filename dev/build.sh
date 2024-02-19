@@ -24,7 +24,7 @@ sed -i '' -e 's/\/\/ stylesSet/stylesSet/g' senky/simplewysiwyg/styles/all/templ
 # make sure to include newest phpBB CKEditor
 mkdir ckeditor
 echo "Fetching newest CKEditor..."
-git clone --quiet git@github.com:senky/ckeditor-dev.git ckeditor
+git clone --quiet git@github.com:aszpi/ckeditor-avx.git ckeditor
 echo "Building CKEditor..."
 ./ckeditor/dev/builder/build.sh
 rm -rf senky/simplewysiwyg/styles/all/template/js/ckeditor

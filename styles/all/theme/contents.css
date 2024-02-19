@@ -3,9 +3,10 @@ CSS used inside CKEditor iframe to style WYSIWYG editor just the same as the fin
 */
 
 body {
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
-	font-size: 13px;
-	line-height: 1.4;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif !important;
+	font-size: 15.8px !important;
+	font-weight: 400 !important;
+	line-height: 22.2px !important;
 	color: #000;
 	background-color: #fff;
 	margin: 10px;
@@ -17,12 +18,12 @@ p {
 
 blockquote {
 	background: transparent none 6px 8px no-repeat;
-	border: 1px solid #DBDBCE;
-	font-size: 0.95em;
+	border: 1px solid #DBDBDB;
+	font-size: 15.6px !important;
 	margin: 1em 1px 1em 25px;
 	overflow: hidden;
 	padding: 5px;
-	background-color: #EBEADD;
+	background-color: #F2F2F2 !important;
 }
 
 blockquote:before {
@@ -32,8 +33,8 @@ blockquote:before {
 	font-style: normal;
 	font-variant: normal;
 	font-family: FontAwesome;
-	font-size: 14px;
-	line-height: 1;
+	font-size: 1.1em !important;
+	line-height: 1em !important;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -54,16 +55,18 @@ ol, ul {
 
 code {
 	background-color: #FFFFFF !important;
-	color: #2E8B57 !important;
-	border: 1px solid #C9D2D8;
+	color: #222222 !important;
+	border: 1px solid #C9C9C9;
 	overflow: auto;
 	display: block;
 	height: auto;
 	max-height: 200px;
 	padding: 5px 3px;
 	margin: 1em 0 1.2em 0;
-	font: 1em Monaco, "Andale Mono","Courier New", Courier, monospace;
-	line-height: 1.3em;
+	font: 15.84px Monaco, "Andale Mono","Courier New", Courier, monospace !important;
+	line-height: 22.2px !important;
+	font-size: 15.84px !important;
+	font-weight: 400 !important;
 	word-wrap: normal;
 }
 
