@@ -1,3 +1,4 @@
 [submodule "styles/all/template/js/ckeditor"]
 	path = styles/all/template/js/ckeditor
 	url = git@github.com:aszpi/ckeditor-avx.git
+	branch = stable
