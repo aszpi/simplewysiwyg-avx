@@ -11,7 +11,7 @@ Go to "ACP" > "Customise" > "Extensions" and enable the "Simple WYSIWYG" extensi
 
 ## Dev
 
-The avxforum-optimized variant of Jakub Senko's Simple WYSIWYG phpBB-extension is now (re-)based on the latest free CKEditor-version, 4.22.1
+The avxforum-optimized variant of senky's Simple WYSIWYG phpBB-extension is now (re-)based on the latest free CKEditor-version, 4.22.1
 ATTENTION: Usage of any kater version of CKEditor 4 requires commercial (=paid) licensing from original copyright owners of CKEditor!
 
 Uses https://github.com/aszpi/ckeditor-avx as the avxforum-customized CKEditor source.
