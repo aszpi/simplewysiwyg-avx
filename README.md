@@ -1,4 +1,4 @@
-# Simple WYSIWYG phpBB plugin customized for avxforum.hu
+# Simple WYSIWYG phpBB extension customized for avxforum.hu
 although this variant of the phpbb WYSIWYG-editor is solely made for avxforum.hu, you may find it useful for your own pusposes, too. 
 If so, feel free to use it under the license terms stated below.
 If you are an avxforum.hu user, and want to contribute to bugfixing or further development, please contact me on github or on avxforum.hu (I am Aszpirin over there :) )
