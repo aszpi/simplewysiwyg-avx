@@ -8,7 +8,7 @@ Go to "ACP" > "Customise" > "Extensions" and enable the "Simple WYSIWYG" extensi
 
 ## Dev
 
-Uses https://github.com/senky/ckeditor-dev as CKEditor source.
+Uses https://github.com/aszpi/ckeditor-avx as the avxforum-customized CKEditor source.
 
 ## License
 
